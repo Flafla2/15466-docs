@@ -294,6 +294,7 @@ void Game::update(float elapsed) {
 			ball_vel.x = (double)(mt() % 1000)/1000.0;
 			ball_vel.y = (double)(mt() % 1000)/1000.0;
 			ball_vel = glm::normalize(ball_vel) * (float)ball_speed;
+			next_coin_spawn_time = 0;
 
 			cur_state = IN_GAME;
 		}
@@ -310,24 +311,34 @@ void Game::update(float elapsed) {
 
 	for(int x = 0; x < coins.size(); x++) {
 		coins[x].rot += elapsed * 10.0;
-		if(glm::length(coins[x].pos - ball_pos) < 0.2) {
+		if(glm::length(coins[x].pos - ball_pos) < 0.5) {
+			std::cout << "coinhit" << std::endl;
 			score++; 
 			coins.erase(coins.begin() + x);
 			x--; // avoids skipping
-		} else if(coins[x].fade_time > game_time) {
+		} else if(coins[x].fade_time < game_time) {
+			std::cout << "coinfade" << std::endl;
 			coins.erase(coins.begin() + x);
 			x--;
 		}
 	}
 	if(game_time >= next_coin_spawn_time) {
 		std::cout << "coin" << std::endl;
+		bool go = next_coin_spawn_time != 0;
 		next_coin_spawn_time = game_time + (double)(mt() % 1000)/1000.0 * 10.0;
-		coin_info nc;
-		nc.pos.x = (double)(mt() % 1000)/1000.0;
-		nc.pos.y = (double)(mt() % 1000)/1000.0;
-		nc.pos = glm::normalize(nc.pos) * 3.0f;
-		nc.rot = (double)(mt() % 1000)/1000.0;
-		nc.fade_time = game_time + (double)(mt() % 1000)/1000.0 * 5.0;
+		if(go) {
+			coin_info nc;
+			// rejection sample circle
+			do {
+				nc.pos.x = (double)(mt() % 1000)/1000.0;
+				nc.pos.y = (double)(mt() % 1000)/1000.0;
+			} while(glm::dot(nc.pos, nc.pos) > 1.0);
+			
+			nc.rot = (double)(mt() % 1000)/1000.0;
+			nc.fade_time = game_time + (double)(mt() % 1000)/1000.0 * 5.0;
+			coins.push_back(nc);
+		}
+		
 	}
 
 	auto paddle_angle = 2.0 * glm::pi<double>() * paddle_pos;
@@ -435,7 +446,7 @@ void Game::draw(glm::uvec2 drawable_size) {
 	for(int x = 0; x < coins.size(); x++) {
 		tran = glm::translate(identity, glm::vec3(coins[x].pos.x, coins[x].pos.y, 0) + game_center);
 		rot = glm::rotate(identity, coins[x].rot, glm::vec3(0,0,1));
-		draw_mesh(coin_mesh, tran * rot);
+		draw_mesh(coin_mesh, tran);
 	}
 
 	if(cur_state == POST_GAME) {

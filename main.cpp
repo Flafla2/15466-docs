@@ -149,7 +149,7 @@ int main(int argc, char **argv) {
 
 		{ //(3) call the game's "draw" function to produce output:
 			//clear the depth+color buffers and set some default state:
-			glClearColor(0.5, 0.5, 0.5, 0.0);
+			glClearColor(0.8, 0.8, 0.8, 0.0);
 			glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 			glEnable(GL_DEPTH_TEST);
 			glEnable(GL_BLEND);

@@ -12,11 +12,11 @@ Screen Shot:
 
 Difficulties Encountered:
 
-TODO: write several sentences about any difficulties you may have encountered in creating the game.
+I mentioned in my design doc that "Care must be taken so that objects do not spawn in between the ball and paddle (thus making them impossible to avoid)".  I'm having trouble figuring this out in an elegant way, so for now I have not implemented bombs (bombs would previously end the game) to reduce frustration.
 
 Good Code:
 
-TODO: write a sentence or two about any code you think you did particularly well.
+I'm proud of the work that I did on the geometry of this game; there were a few tricky edge cases and different things I needed to try to get the sphere / rectangle collision detection working.  I ended up reducing the problem to ray/ray intersection (i.e., colliding the movement vector of the ball with the line comprising the paddle).  This problem was especially difficult because the paddle can be rotated.
 
 # Using This Base Code
 
