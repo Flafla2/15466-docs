@@ -1,11 +1,10 @@
 # Game Information
-(Note: fill in this portion with information about your game.)
 
-Title: (TODO: your game's title)
+Title: Single Player Pong
 
-Author: (TODO: your name)
+Author: Adrian Biagioli
 
-Design Document: [TODO: name of design document](TODO: link to design document)
+Design Document: [Single Player Pong](http://graphics.cs.cmu.edu/courses/15-466-f18/game0-designs/abiagiol/)
 
 Screen Shot:
 

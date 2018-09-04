@@ -100,7 +100,10 @@ for name in to_write:
 			
 			# Col is the default name for a color layer in blender.  Change if needed
 			col_layer = mesh.vertex_colors['Col']
-			col = col_layer.data[poly.loop_indices[i]].color
+			if col_layer != None:
+				col = col_layer.data[poly.loop_indices[i]].color
+			else:
+				col = mathutils.Color((1.0, 1.0, 1.0))
 
 			data += struct.pack('BBBB', int(col.r * 255), int(col.g * 255), int(col.b * 255), 255)
 

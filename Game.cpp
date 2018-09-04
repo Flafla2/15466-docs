@@ -177,6 +177,9 @@ Game::Game() {
 		track_mesh = lookup("track");
 		ball_mesh = lookup("Sphere");
 		paddle_mesh = lookup("Cube");
+		lose_text_mesh = lookup("losertext");
+		coin_mesh = lookup("coin");
+		bomb_mesh = lookup("bomb");
 	}
 
 	{ //create vertex array object to hold the map from the mesh vertex buffer to shader program attributes:
@@ -199,9 +202,11 @@ Game::Game() {
 
 	GL_ERRORS();
 
-	ball_vel.x = (double)(mt() % 1000)/1000.0;
-	ball_vel.y = (double)(mt() % 1000)/1000.0;
+	ball_pos = glm::vec3(0, 0, 0);
+	start_time = std::chrono::high_resolution_clock::now();
 
+	cur_state = PRE_GAME;
+	state_timer = 3.0f;
 }
 
 Game::~Game() {
@@ -235,7 +240,43 @@ bool Game::handle_event(SDL_Event const &evt, glm::uvec2 window_size) {
 	return false;
 }
 
+float cross2(glm::vec2 v, glm::vec2 w) {
+	return (v.x*w.y) - (v.y*w.x);
+}
+
+bool ray_line_isect(glm::vec2 ro, glm::vec2 rd, glm::vec2 p0, glm::vec2 p1, double *out) {
+	// Adapted from this explanation
+	// https://rootllama.wordpress.com/2014/06/20/ray-line-segment-intersection-test-in-2d/
+
+	glm::vec2 v1 = ro - p0;
+	glm::vec2 v2 = p1 - p0;
+	glm::vec2 v3(-rd.y, rd.x);
+
+	double d = glm::dot(v2, v3);
+
+	if(d < 0.001)
+		return false;
+
+	*out = abs(cross2(v2, v1)) / d;
+
+	return true;
+}
+
+glm::vec2 reflect_ray(glm::vec2 ray, glm::vec2 norm) {
+	// project ray onto norm of reflection
+	glm::vec2 pr = glm::dot(ray, norm) / glm::dot(norm, norm) * norm;
+	// subtract projection from ray
+	glm::vec2 ret = ray - pr;
+	// negate what's left (the reflection)
+	pr *= -1;
+	// add the projection back (that part wasn't reflected)
+	return ret + pr;
+}
+
 void Game::update(float elapsed) {
+	auto cur_time = std::chrono::high_resolution_clock::now();
+	float game_time = std::chrono::duration<float>(cur_time - start_time).count();
+
 	if (controls.move_cw) {
 		paddle_pos += move_speed * elapsed;
 	}
@@ -243,6 +284,73 @@ void Game::update(float elapsed) {
 		paddle_pos -= move_speed * elapsed;
 	}
 	paddle_pos = fmod(1.0 + paddle_pos, 1.0);
+
+	if(cur_state == PRE_GAME) {
+		ball_pos = glm::vec3(0, 0, 0);
+
+		if(game_time > state_timer) {
+			ball_vel.x = (double)(mt() % 1000)/1000.0;
+			ball_vel.y = (double)(mt() % 1000)/1000.0;
+			ball_vel = glm::normalize(ball_vel) * (float)ball_speed;
+
+			cur_state = IN_GAME;
+		}
+		return;
+	} else if(cur_state == POST_GAME) {
+		if(game_time > state_timer) {
+			cur_state = PRE_GAME;
+			state_timer = game_time + 3.0;
+		}
+		return;
+	}
+
+	ball_pos += ball_vel * elapsed;
+
+	for(int x = 0; x < coins.size(); x++) {
+		coins[x].rot += elapsed * 10.0;
+		if(glm::length(coins[x].pos - ball_pos) < 0.2) {
+			score++; 
+			coins.erase(coins.begin() + x);
+			x--; // avoids skipping
+		} else if(coins[x].fade_time > game_time) {
+			coins.erase(coins.begin() + x);
+			x--;
+		}
+	}
+	if(game_time >= next_coin_spawn_time) {
+		std::cout << "coin" << std::endl;
+		next_coin_spawn_time = game_time + (double)(mt() % 1000)/1000.0 * 10.0;
+		coin_info nc;
+		nc.pos.x = (double)(mt() % 1000)/1000.0;
+		nc.pos.y = (double)(mt() % 1000)/1000.0;
+		nc.pos = glm::normalize(nc.pos) * 3.0f;
+		nc.rot = (double)(mt() % 1000)/1000.0;
+		nc.fade_time = game_time + (double)(mt() % 1000)/1000.0 * 5.0;
+	}
+
+	auto paddle_angle = 2.0 * glm::pi<double>() * paddle_pos;
+
+	auto ball_vel_n = glm::normalize(ball_vel);
+	auto paddle_wpos = glm::vec2(cos(paddle_angle), sin(paddle_angle)) * (float)(track_size / 2);
+	auto paddle_axis = glm::normalize(glm::vec2(-paddle_wpos.y, paddle_wpos.x)) * (float)paddle_size;
+
+	auto paddle_p1 = paddle_wpos - paddle_axis * 0.5f;
+	auto paddle_p2 = paddle_wpos + paddle_axis * 0.5f;
+
+	double dist = 0;
+	bool hit = ray_line_isect(ball_pos, ball_vel_n, paddle_p1, paddle_p2, &dist);
+
+	if(hit && glm::dot(ball_vel_n, paddle_wpos) >= 0 && dist <= ball_vel.length() * elapsed + 0.2f) {
+		ball_vel = reflect_ray(ball_vel, glm::normalize(paddle_wpos));
+		score++;
+		std::cout << "hit" << std::endl;
+	}
+
+	if(glm::dot(ball_pos, ball_pos) > track_size*track_size*0.25) {
+		cur_state = POST_GAME;
+		state_timer = game_time + 2.0;
+		std::cout << "Lose Condition" << std::endl;
+	}
 }
 
 void Game::draw(glm::uvec2 drawable_size) {
@@ -299,21 +407,35 @@ void Game::draw(glm::uvec2 drawable_size) {
 	};
 
 	// draw track at origin
-	glm::mat4 tran(1), rot(1);
-	tran = glm::translate(tran, glm::vec3(0,0,0));
+	glm::mat4 tran(1), rot(1), identity(1);
+	glm::vec3 game_center = glm::vec3(camera_dim.x, camera_dim.y, 0) * 0.5f;
+	tran = glm::translate(identity, game_center);
 	draw_mesh(track_mesh, tran);
 
 	// draw paddle
 	double angle = 2.0 * glm::pi<double>() * paddle_pos;
-	double angle_deg = paddle_pos * 360;
-	glm::vec2 posn = glm::vec2(cos(angle), sin(angle)) * (float)track_size;
-	tran = glm::translate(tran, glm::vec3(posn.x, posn.y, 0));
-	rot = glm::rotate(rot, (glm::mediump_float)(90.0-angle_deg), glm::vec3(0, 0, 1));
-	draw_mesh(paddle_mesh, rot * tran);
+	
+	glm::vec2 posn = glm::vec2(cos(angle), sin(angle)) * (float)(track_size / 2);
+	tran = glm::translate(identity, game_center + glm::vec3(posn.x, posn.y, 0));
+	rot = glm::rotate(identity, (glm::mediump_float)(glm::pi<double>()/2 + angle), glm::vec3(0, 0, 1));
+	draw_mesh(paddle_mesh, tran * rot);
 
 	// draw ball
-	tran = glm::translate(tran, glm::vec3(ball_pos.x, ball_pos.y, 0));
+	tran = glm::translate(identity, glm::vec3(ball_pos.x, ball_pos.y, 0) + game_center);
 	draw_mesh(ball_mesh, tran);
+
+	// draw coins
+	for(int x = 0; x < coins.size(); x++) {
+		tran = glm::translate(identity, glm::vec3(coins[x].pos.x, coins[x].pos.y, 0) + game_center);
+		rot = glm::rotate(identity, coins[x].rot, glm::vec3(0,0,1));
+		draw_mesh(coin_mesh, tran * rot);
+	}
+
+	if(cur_state == POST_GAME) {
+		// the player just lost, draw the "you lose" text
+		tran = glm::translate(identity, glm::vec3(0, 1, 0) + game_center);
+		draw_mesh(lose_text_mesh, tran);
+	}
 
 	glUseProgram(0);
 

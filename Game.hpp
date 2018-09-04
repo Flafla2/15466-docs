@@ -62,6 +62,9 @@ struct Game {
 	Mesh paddle_mesh;
 	Mesh track_mesh;
 	Mesh ball_mesh;
+	Mesh lose_text_mesh;
+	Mesh coin_mesh;
+	Mesh bomb_mesh;
 
 	GLuint meshes_for_simple_shading_vao = -1U; //vertex array object that describes how to connect the meshes_vbo to the simple_shading_program
 
@@ -70,15 +73,36 @@ struct Game {
 	std::mt19937 mt = std::mt19937(0xbead1234);
 
 	const double track_size = 4.7;
-	const double paddle_size = 1.0;
-	const double move_speed = 0.2;
+	const double paddle_size = 2.0;
+	const double move_speed = 0.75;
+	const double ball_speed = 3.0;
 
 	// Min: 0.0, Max: 1.0
 	// Current position of the paddle.  0.0/1.0 is 3-o'clock position going CW
-	double paddle_pos = 0.75;
+	double paddle_pos = 0;
 	glm::vec2 ball_vel = glm::vec2(1,0);
 	glm::vec2 ball_pos = glm::vec2(0,0);
 	glm::uvec2 camera_dim = glm::uvec2(6,6);
+
+	enum game_state {
+		PRE_GAME, IN_GAME, POST_GAME
+	};
+
+	std::chrono::steady_clock::time_point start_time;
+
+	game_state cur_state = PRE_GAME;
+	double state_timer = 0.0;
+
+	struct coin_info {
+		glm::vec2 pos;
+		float fade_time;
+		float rot;
+	};
+
+	std::vector<coin_info> coins;
+	double next_coin_spawn_time = 0.0;
+
+	uint score = 0;
 
 	struct {
 		bool move_cw = false;

@@ -1,0 +1,2633 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"track_",
+				"track_mesh\tGame::Mesh track_mesh"
+			],
+			[
+				"padd",
+				"paddle_pos"
+			],
+			[
+				"nor",
+				"normalize\tvoid normalize()"
+			],
+			[
+				"L_out",
+				"L_out_ind\tCMU462::Spectrum L_out_ind"
+			],
+			[
+				"de",
+				"depth\tsize_t depth"
+			],
+			[
+				"getBind",
+				"getBindTransformationWithoutRoot\tCMU462::Matrix4x4 getBindTransformationWithoutRoot()"
+			],
+			[
+				"vert",
+				"verticesBegin\tCMU462::VertexIter verticesBegin()"
+			],
+			[
+				"time",
+				"time\ttime_t time(time_t *)"
+			],
+			[
+				"use",
+				"useCapsuleRadius"
+			],
+			[
+				"n",
+				"blendPos\tCMU462::Vector3D blendPos"
+			],
+			[
+				"d",
+				"distance\tdouble distance"
+			],
+			[
+				"vertices",
+				"nVertices\tSize nVertices() const"
+			],
+			[
+				"hem",
+				"HalfedgeMesh\tHalfedgeMesh()"
+			],
+			[
+				"NU",
+				"NUM_BUCKETS\tconst int NUM_BUCKETS"
+			],
+			[
+				"get",
+				"get_bbox\tCMU462::BBox get_bbox() const"
+			],
+			[
+				"r",
+				"range\tsize_t range"
+			],
+			[
+				"bd",
+				"get_bsdf\tCMU462::BSDF * get_bsdf() const"
+			],
+			[
+				"has_I",
+				"has_invalid_cycles"
+			],
+			[
+				"ha",
+				"halfedges"
+			],
+			[
+				"Halfedge",
+				"HalfedgeCIter\tHalfedgeCIter"
+			],
+			[
+				"Halfed",
+				"HalfedgeIter\tHalfedgeIter"
+			],
+			[
+				"Halfe",
+				"HalfedgeIter\tHalfedgeIter"
+			],
+			[
+				"Edge",
+				"EdgeIter\tEdgeIter"
+			],
+			[
+				"Edg",
+				"EdgeIter\tEdgeIter"
+			],
+			[
+				"texe",
+				"texels"
+			],
+			[
+				"sampl",
+				"sample_bilinear\tCMU462::Color sample_bilinear(CMU462::Texture &tex, float u, float v)"
+			],
+			[
+				"uint8",
+				"uint8_to_float\tvoid uint8_to_float(float *dst, unsigned char *src)"
+			],
+			[
+				"sample",
+				"sample_nearest\tCMU462::Color sample_nearest(CMU462::Texture &tex, float u, float v)"
+			],
+			[
+				"rasterize_point",
+				"rasterize_point_ss\tvoid rasterize_point_ss(int x, int y, CMU462::Color color)"
+			],
+			[
+				"Matr",
+				"Matrix3x3\tMatrix3x3(double *data)"
+			],
+			[
+				"supers",
+				"supersample_target"
+			],
+			[
+				"Software",
+				"SoftwareRendererImp"
+			],
+			[
+				"glEn",
+				"glEnable"
+			],
+			[
+				"GL_TE",
+				"GL_TEXTURE_2D"
+			],
+			[
+				"GL_PO",
+				"GL_POINTS\tGL_POINTS"
+			],
+			[
+				"last",
+				"last_block_alloc"
+			],
+			[
+				"lat",
+				"last_block_alloc"
+			],
+			[
+				"prev_all",
+				"prev_alloc"
+			],
+			[
+				"get_prev",
+				"get_prev_alloc"
+			],
+			[
+				"header",
+				"header"
+			],
+			[
+				"extract",
+				"extract_prev_alloc"
+			],
+			[
+				"SL_",
+				"SL_LINEAR_SIZE"
+			],
+			[
+				"min",
+				"min_block_size"
+			],
+			[
+				"remove",
+				"remove_from_freelist"
+			],
+			[
+				"NEXT",
+				"next_free"
+			],
+			[
+				"dbg_",
+				"dbg_requires"
+			],
+			[
+				"block",
+				"block_next"
+			],
+			[
+				"mm_check",
+				"mm_checkblock"
+			],
+			[
+				"size_",
+				"size_mask"
+			],
+			[
+				"BLOCK",
+				"block_next"
+			],
+			[
+				"free_",
+				"free_next"
+			],
+			[
+				"next_free",
+				"next_free"
+			],
+			[
+				"prev_free",
+				"prev_free_off"
+			],
+			[
+				"write_",
+				"write_header"
+			],
+			[
+				"dbg",
+				"dbg_requires"
+			],
+			[
+				"heap",
+				"heap_start"
+			],
+			[
+				"alloc_m",
+				"prev_alloc_mask"
+			],
+			[
+				"STD",
+				"STDOUT_FILENO"
+			],
+			[
+				"O_",
+				"O_RDWR"
+			],
+			[
+				"job_",
+				"job_list"
+			],
+			[
+				"getj",
+				"getjobpid"
+			],
+			[
+				"job",
+				"job_list"
+			],
+			[
+				"run_bui",
+				"run_builtin_fg"
+			],
+			[
+				"Sigset",
+				"Sigfillset"
+			],
+			[
+				"sig_",
+				"SIG_SETMASK"
+			],
+			[
+				"set",
+				"set_bits"
+			],
+			[
+				"dirty",
+				"dirty_count"
+			],
+			[
+				"char",
+				"char_to_access_type"
+			],
+			[
+				"acces",
+				"access_type_to_char"
+			],
+			[
+				"cur",
+				"cur_line"
+			],
+			[
+				"hit",
+				"hit_str"
+			],
+			[
+				"bloc",
+				"block_offset"
+			],
+			[
+				"address",
+				"address_to_tag"
+			],
+			[
+				"addres",
+				"address_to_block_offset"
+			],
+			[
+				"data",
+				"data_size"
+			],
+			[
+				"trace",
+				"tracefile_given"
+			],
+			[
+				"inc",
+				"inc\t#include \"…\""
+			],
+			[
+				"q_ins",
+				"q_insert_head"
+			],
+			[
+				"all_boa",
+				"all_boards_aligned"
+			],
+			[
+				"outc",
+				"outcome_to_string"
+			],
+			[
+				"all",
+				"all_boards_aligned"
+			],
+			[
+				"best",
+				"bestMaxEdge"
+			],
+			[
+				"prun",
+				"prune_percentage"
+			],
+			[
+				"In_p",
+				"In_Play"
+			],
+			[
+				"search",
+				"search_depth"
+			],
+			[
+				"below",
+				"BELOW"
+			],
+			[
+				"won_d",
+				"won_diag1"
+			],
+			[
+				"toList",
+				"toList2D"
+			],
+			[
+				"P",
+				"PotionColors"
+			],
+			[
+				"filter",
+				"filter_bad"
+			],
+			[
+				"extrac",
+				"extract_nbr"
+			],
+			[
+				"Sequence",
+				"SequenceHelper"
+			],
+			[
+				"EveryOther",
+				"EveryOtherSimulation"
+			],
+			[
+				"DreadFirst",
+				"DreadFirstOneSimulation"
+			],
+			[
+				"add",
+				"add_children"
+			],
+			[
+				"prefixSum",
+				"prefixSumHelp"
+			],
+			[
+				"prefix",
+				"prefixSum"
+			],
+			[
+				"look",
+				"look_say_table"
+			],
+			[
+				"placement",
+				"placement_extents"
+			],
+			[
+				"scenario",
+				"scenario_settings"
+			],
+			[
+				"Scen",
+				"ScenarioSettingsProperty"
+			],
+			[
+				"div",
+				"divisibleByThree"
+			],
+			[
+				"elt",
+				"elt_size"
+			],
+			[
+				"c0v_",
+				"c0v_pop"
+			],
+			[
+				"val2",
+				"val2ptr"
+			],
+			[
+				"c0v",
+				"c0v_pop"
+			],
+			[
+				"c0v_p",
+				"c0v_push"
+			],
+			[
+				"va",
+				"val2ptr"
+			],
+			[
+				"c0",
+				"c0v_push"
+			],
+			[
+				"el",
+				"elt_size"
+			],
+			[
+				"ptr",
+				"ptr2val"
+			],
+			[
+				"call",
+				"callStack"
+			],
+			[
+				"c0v_stack",
+				"c0v_stack_free"
+			],
+			[
+				"c0v_stac",
+				"c0v_stack_new"
+			],
+			[
+				"free",
+				"free_frame_info"
+			],
+			[
+				"func",
+				"function_pool"
+			],
+			[
+				"bitv",
+				"bitvector_free"
+			],
+			[
+				"bit",
+				"bitvector_free"
+			],
+			[
+				"bitvect",
+				"bitvector_flip"
+			],
+			[
+				"board_da",
+				"board_data_free"
+			],
+			[
+				"htelem",
+				"htelem_to_board"
+			],
+			[
+				"move_",
+				"move_header"
+			],
+			[
+				"stack_",
+				"stack_empty"
+			],
+			[
+				"index",
+				"index_from_coords"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"move",
+				"move_header"
+			],
+			[
+				"ReadE",
+				"ReadLine()\tstring"
+			],
+			[
+				"Seria",
+				"SerializeField\tSerializeField"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Game.cpp",
+			"settings":
+			{
+				"buffer_size": 12836,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Game.hpp",
+			"settings":
+			{
+				"buffer_size": 2293,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "meshes/export-meshes.py",
+			"settings":
+			{
+				"buffer_size": 4349,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "main.cpp",
+			"settings":
+			{
+				"buffer_size": 5225,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".clang_complete",
+			"settings":
+			{
+				"buffer_size": 29,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"DrawSVG",
+					""
+				],
+				[
+					"DrawSVG",
+					"1. Basic"
+				],
+				[
+					"DrawSVG",
+					"2. Alpha"
+				],
+				[
+					"DrawSVG",
+					"3. Illustration"
+				],
+				[
+					"DrawSVG",
+					"4. Subdiv"
+				],
+				[
+					"DrawSVG",
+					"5. Hardcore"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"DrawSVG",
+				""
+			]
+		],
+		[
+			[
+				[
+					"DrawSVG",
+					""
+				],
+				[
+					"DrawSVG",
+					"Build For Debugging"
+				],
+				[
+					"DrawSVG",
+					"1. Basic"
+				],
+				[
+					"DrawSVG",
+					"2. Alpha"
+				],
+				[
+					"DrawSVG",
+					"3. Illustration"
+				],
+				[
+					"DrawSVG",
+					"4. Subdiv"
+				],
+				[
+					"DrawSVG",
+					"5. Hardcore"
+				],
+				[
+					"DrawSVG",
+					"6. Task 9"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"DrawSVG",
+				"1. Basic"
+			]
+		],
+		[
+			[
+				[
+					"DrawSVG",
+					""
+				],
+				[
+					"DrawSVG",
+					"Build For Debugging"
+				],
+				[
+					"DrawSVG",
+					"1. Basic"
+				],
+				[
+					"DrawSVG",
+					"2. Alpha"
+				],
+				[
+					"DrawSVG",
+					"3. Illustration"
+				],
+				[
+					"DrawSVG",
+					"4. Subdiv"
+				],
+				[
+					"DrawSVG",
+					"5. Hardcore"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"DrawSVG",
+				"2. Alpha"
+			]
+		],
+		[
+			[
+				[
+					"DrawSVG/cmake",
+					""
+				],
+				[
+					"DrawSVG/cmake",
+					"Run"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"DrawSVG/cmake",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Scotty3D",
+					""
+				],
+				[
+					"Scotty3D",
+					"Build For Debugging"
+				],
+				[
+					"Scotty3D",
+					"Build with Warnings for Debugging"
+				],
+				[
+					"Scotty3D",
+					"Clean"
+				],
+				[
+					"Scotty3D",
+					"Cube"
+				],
+				[
+					"Scotty3D",
+					"Teapot"
+				],
+				[
+					"Scotty3D",
+					"Cow"
+				],
+				[
+					"Scotty3D",
+					"Bean"
+				],
+				[
+					"Scotty3D",
+					"Human"
+				],
+				[
+					"Scotty3D",
+					"Cornell (Lambertian)"
+				],
+				[
+					"Scotty3D",
+					"Cornell"
+				],
+				[
+					"Scotty3D",
+					"Building"
+				],
+				[
+					"Scotty3D",
+					"Sphere"
+				],
+				[
+					"Scotty3D",
+					"Quadball"
+				],
+				[
+					"Scotty3D",
+					"Banana"
+				],
+				[
+					"Scotty3D",
+					"Beast"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Scotty3D",
+				"Build For Debugging"
+			]
+		],
+		[
+			[
+				[
+					"Scotty3D",
+					""
+				],
+				[
+					"Scotty3D",
+					"Build For Debugging"
+				],
+				[
+					"Scotty3D",
+					"Build with Warnings for Debugging"
+				],
+				[
+					"Scotty3D",
+					"Clean"
+				],
+				[
+					"Scotty3D",
+					"Cube"
+				],
+				[
+					"Scotty3D",
+					"Teapot"
+				],
+				[
+					"Scotty3D",
+					"Cow"
+				],
+				[
+					"Scotty3D",
+					"Bean"
+				],
+				[
+					"Scotty3D",
+					"Human"
+				],
+				[
+					"Scotty3D",
+					"Cornell (Lambertian)"
+				],
+				[
+					"Scotty3D",
+					"Cornell"
+				],
+				[
+					"Scotty3D",
+					"Building"
+				],
+				[
+					"Scotty3D",
+					"Sphere"
+				],
+				[
+					"Scotty3D",
+					"Quadball"
+				],
+				[
+					"Scotty3D",
+					"Banana"
+				],
+				[
+					"Scotty3D",
+					"Beast"
+				],
+				[
+					"Scotty3D",
+					"Plane64"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Scotty3D",
+				"Plane64"
+			]
+		],
+		[
+			[
+				[
+					"Scotty3D",
+					""
+				],
+				[
+					"Scotty3D",
+					"Build For Debugging"
+				],
+				[
+					"Scotty3D",
+					"Build with Warnings for Debugging"
+				],
+				[
+					"Scotty3D",
+					"Clean"
+				],
+				[
+					"Scotty3D",
+					"Cube"
+				],
+				[
+					"Scotty3D",
+					"Teapot"
+				],
+				[
+					"Scotty3D",
+					"Cow"
+				],
+				[
+					"Scotty3D",
+					"Bean"
+				],
+				[
+					"Scotty3D",
+					"Human"
+				],
+				[
+					"Scotty3D",
+					"Cornell (Lambertian)"
+				],
+				[
+					"Scotty3D",
+					"Cornell"
+				],
+				[
+					"Scotty3D",
+					"Building"
+				],
+				[
+					"Scotty3D",
+					"Sphere"
+				],
+				[
+					"Scotty3D",
+					"Quadball"
+				],
+				[
+					"Scotty3D",
+					"Banana"
+				],
+				[
+					"Scotty3D",
+					"Beast"
+				],
+				[
+					"Scotty3D",
+					"Plane64"
+				],
+				[
+					"Scotty3D",
+					"Plane16384"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Scotty3D",
+				"Plane16384"
+			]
+		],
+		[
+			[
+				[
+					"Scotty3D",
+					""
+				],
+				[
+					"Scotty3D",
+					"Build For Debugging"
+				],
+				[
+					"Scotty3D",
+					"Build with Warnings for Debugging"
+				],
+				[
+					"Scotty3D",
+					"Clean"
+				],
+				[
+					"Scotty3D",
+					"Cube"
+				],
+				[
+					"Scotty3D",
+					"Teapot"
+				],
+				[
+					"Scotty3D",
+					"Cow"
+				],
+				[
+					"Scotty3D",
+					"Bean"
+				],
+				[
+					"Scotty3D",
+					"Human"
+				],
+				[
+					"Scotty3D",
+					"Cornell (Lambertian)"
+				],
+				[
+					"Scotty3D",
+					"Cornell"
+				],
+				[
+					"Scotty3D",
+					"Building"
+				],
+				[
+					"Scotty3D",
+					"Sphere"
+				],
+				[
+					"Scotty3D",
+					"Quadball"
+				],
+				[
+					"Scotty3D",
+					"Banana"
+				],
+				[
+					"Scotty3D",
+					"Beast"
+				],
+				[
+					"Scotty3D",
+					"Plane64"
+				],
+				[
+					"Scotty3D",
+					"Plane16384"
+				],
+				[
+					"Scotty3D",
+					"CBLucy"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Scotty3D",
+				"Build For Debugging"
+			]
+		],
+		[
+			[
+				[
+					"Scotty3D",
+					""
+				],
+				[
+					"Scotty3D",
+					"Build For Debugging"
+				],
+				[
+					"Scotty3D",
+					"Build with Warnings for Debugging"
+				],
+				[
+					"Scotty3D",
+					"Clean"
+				],
+				[
+					"Scotty3D",
+					"Cube"
+				],
+				[
+					"Scotty3D",
+					"Teapot"
+				],
+				[
+					"Scotty3D",
+					"Cow"
+				],
+				[
+					"Scotty3D",
+					"Bean"
+				],
+				[
+					"Scotty3D",
+					"Human"
+				],
+				[
+					"Scotty3D",
+					"Cornell (Lambertian)"
+				],
+				[
+					"Scotty3D",
+					"Cornell (Lambertian)"
+				],
+				[
+					"Scotty3D",
+					"Cornell"
+				],
+				[
+					"Scotty3D",
+					"Building"
+				],
+				[
+					"Scotty3D",
+					"Sphere"
+				],
+				[
+					"Scotty3D",
+					"Quadball"
+				],
+				[
+					"Scotty3D",
+					"Banana"
+				],
+				[
+					"Scotty3D",
+					"Beast"
+				],
+				[
+					"Scotty3D",
+					"Plane64"
+				],
+				[
+					"Scotty3D",
+					"Plane16384"
+				],
+				[
+					"Scotty3D",
+					"CBLucy"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Scotty3D",
+				"Build For Debugging"
+			]
+		],
+		[
+			[
+				[
+					"Scotty3D",
+					""
+				],
+				[
+					"Scotty3D",
+					"Build For Debugging"
+				],
+				[
+					"Scotty3D",
+					"Build with Warnings for Debugging"
+				],
+				[
+					"Scotty3D",
+					"Clean"
+				],
+				[
+					"Scotty3D",
+					"Cube"
+				],
+				[
+					"Scotty3D",
+					"Teapot"
+				],
+				[
+					"Scotty3D",
+					"Cow"
+				],
+				[
+					"Scotty3D",
+					"Bean"
+				],
+				[
+					"Scotty3D",
+					"Human"
+				],
+				[
+					"Scotty3D",
+					"Cornell (Lambertian)"
+				],
+				[
+					"Scotty3D",
+					"Cornell (Refraction)"
+				],
+				[
+					"Scotty3D",
+					"Cornell"
+				],
+				[
+					"Scotty3D",
+					"Building"
+				],
+				[
+					"Scotty3D",
+					"Sphere"
+				],
+				[
+					"Scotty3D",
+					"Quadball"
+				],
+				[
+					"Scotty3D",
+					"Banana"
+				],
+				[
+					"Scotty3D",
+					"Beast"
+				],
+				[
+					"Scotty3D",
+					"Plane64"
+				],
+				[
+					"Scotty3D",
+					"Plane16384"
+				],
+				[
+					"Scotty3D",
+					"CBLucy"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Scotty3D",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Scotty3D",
+					""
+				],
+				[
+					"Scotty3D",
+					"Build For Debugging"
+				],
+				[
+					"Scotty3D",
+					"Build with Warnings for Debugging"
+				],
+				[
+					"Scotty3D",
+					"Clean"
+				],
+				[
+					"Scotty3D",
+					"Cube"
+				],
+				[
+					"Scotty3D",
+					"Teapot"
+				],
+				[
+					"Scotty3D",
+					"Cow"
+				],
+				[
+					"Scotty3D",
+					"Human"
+				],
+				[
+					"Scotty3D",
+					"Cornell (Lambertian)"
+				],
+				[
+					"Scotty3D",
+					"Cornell"
+				],
+				[
+					"Scotty3D",
+					"Building"
+				],
+				[
+					"Scotty3D",
+					"Sphere"
+				],
+				[
+					"Scotty3D",
+					"Quadball"
+				],
+				[
+					"Scotty3D",
+					"Banana"
+				],
+				[
+					"Scotty3D",
+					"Beast"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Scotty3D",
+				"Build For Debugging"
+			]
+		],
+		[
+			[
+				[
+					"Scotty3D",
+					""
+				],
+				[
+					"Scotty3D",
+					"Build For Debugging"
+				],
+				[
+					"Scotty3D",
+					"Build with Warnings for Debugging"
+				],
+				[
+					"Scotty3D",
+					"Clean"
+				],
+				[
+					"Scotty3D",
+					"Cube"
+				],
+				[
+					"Scotty3D",
+					"Teapot"
+				],
+				[
+					"Scotty3D",
+					"Cow"
+				],
+				[
+					"Scotty3D",
+					"Sphere"
+				],
+				[
+					"Scotty3D",
+					"Cornell (Lambertian)"
+				],
+				[
+					"Scotty3D",
+					"Cornell"
+				],
+				[
+					"Scotty3D",
+					"Building"
+				],
+				[
+					"Scotty3D",
+					"Quadball"
+				],
+				[
+					"Scotty3D",
+					"Banana"
+				],
+				[
+					"Scotty3D",
+					"Beast"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Scotty3D",
+				"Teapot"
+			]
+		],
+		[
+			[
+				[
+					"Scotty3D",
+					""
+				],
+				[
+					"Scotty3D",
+					"Build For Debugging"
+				],
+				[
+					"Scotty3D",
+					"Build with Warnings for Debugging"
+				],
+				[
+					"Scotty3D",
+					"Clean"
+				],
+				[
+					"Scotty3D",
+					"Cube"
+				],
+				[
+					"Scotty3D",
+					"Teapot"
+				],
+				[
+					"Scotty3D",
+					"Cow"
+				],
+				[
+					"Scotty3D",
+					"Sphere"
+				],
+				[
+					"Scotty3D",
+					"Cornell (Lambertian)"
+				],
+				[
+					"Scotty3D",
+					"MaxPlanck"
+				],
+				[
+					"Scotty3D",
+					"Building"
+				],
+				[
+					"Scotty3D",
+					"Quadball"
+				],
+				[
+					"Scotty3D",
+					"Banana"
+				],
+				[
+					"Scotty3D",
+					"Beast"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Scotty3D",
+				"Cornell (Lambertian)"
+			]
+		],
+		[
+			[
+				[
+					"Scotty3D",
+					""
+				],
+				[
+					"Scotty3D",
+					"Build For Debugging"
+				],
+				[
+					"Scotty3D",
+					"Build with Warnings for Debugging"
+				],
+				[
+					"Scotty3D",
+					"Clean"
+				],
+				[
+					"Scotty3D",
+					"Cube"
+				],
+				[
+					"Scotty3D",
+					"Teapot"
+				],
+				[
+					"Scotty3D",
+					"Cow"
+				],
+				[
+					"Scotty3D",
+					"Sphere"
+				],
+				[
+					"Scotty3D",
+					"Dodecahedron"
+				],
+				[
+					"Scotty3D",
+					"MaxPlanck"
+				],
+				[
+					"Scotty3D",
+					"Building"
+				],
+				[
+					"Scotty3D",
+					"Quadball"
+				],
+				[
+					"Scotty3D",
+					"Banana"
+				],
+				[
+					"Scotty3D",
+					"Beast"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Scotty3D",
+				"Cow"
+			]
+		],
+		[
+			[
+				[
+					"Scotty3D",
+					""
+				],
+				[
+					"Scotty3D",
+					"Build For Debugging"
+				],
+				[
+					"Scotty3D",
+					"Build with Warnings for Debugging"
+				],
+				[
+					"Scotty3D",
+					"Cube"
+				],
+				[
+					"Scotty3D",
+					"Teapot"
+				],
+				[
+					"Scotty3D",
+					"Cow"
+				],
+				[
+					"Scotty3D",
+					"Sphere"
+				],
+				[
+					"Scotty3D",
+					"Dodecahedron"
+				],
+				[
+					"Scotty3D",
+					"MaxPlanck"
+				],
+				[
+					"Scotty3D",
+					"Building"
+				],
+				[
+					"Scotty3D",
+					"Quadball"
+				],
+				[
+					"Scotty3D",
+					"Banana"
+				],
+				[
+					"Scotty3D",
+					"Beast"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Scotty3D",
+				"Build with Warnings for Debugging"
+			]
+		],
+		[
+			[
+				[
+					"Scotty3D",
+					""
+				],
+				[
+					"Scotty3D",
+					"Build For Debugging"
+				],
+				[
+					"Scotty3D",
+					"Cube"
+				],
+				[
+					"Scotty3D",
+					"Teapot"
+				],
+				[
+					"Scotty3D",
+					"Cow"
+				],
+				[
+					"Scotty3D",
+					"Beetle"
+				],
+				[
+					"Scotty3D",
+					"Dodecahedron"
+				],
+				[
+					"Scotty3D",
+					"MaxPlanck"
+				],
+				[
+					"Scotty3D",
+					"Building"
+				],
+				[
+					"Scotty3D",
+					"Quadball"
+				],
+				[
+					"Scotty3D",
+					"Banana"
+				],
+				[
+					"Scotty3D",
+					"Beast"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Scotty3D",
+				"Build For Debugging"
+			]
+		],
+		[
+			[
+				[
+					"Scotty3D",
+					""
+				],
+				[
+					"Scotty3D",
+					"Build For Debugging"
+				],
+				[
+					"Scotty3D",
+					"Cube"
+				],
+				[
+					"Scotty3D",
+					"Teapot"
+				],
+				[
+					"Scotty3D",
+					"Cow"
+				],
+				[
+					"Scotty3D",
+					"Sphere"
+				],
+				[
+					"Scotty3D",
+					"Dodecahedron"
+				],
+				[
+					"Scotty3D",
+					"MaxPlanck"
+				],
+				[
+					"Scotty3D",
+					"Building"
+				],
+				[
+					"Scotty3D",
+					"Quadball"
+				],
+				[
+					"Scotty3D",
+					"Banana"
+				],
+				[
+					"Scotty3D",
+					"Beast"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Scotty3D",
+				"Build For Debugging"
+			]
+		],
+		[
+			[
+				[
+					"Scotty3D",
+					""
+				],
+				[
+					"Scotty3D",
+					"Build For Debugging"
+				],
+				[
+					"Scotty3D",
+					"Run"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Scotty3D",
+				"Build For Debugging"
+			]
+		],
+		[
+			[
+				[
+					"Scotty3D",
+					""
+				],
+				[
+					"Scotty3D",
+					"Clean"
+				],
+				[
+					"Scotty3D",
+					"Cube"
+				],
+				[
+					"Scotty3D",
+					"Teapot"
+				],
+				[
+					"Scotty3D",
+					"Cow"
+				],
+				[
+					"Scotty3D",
+					"Bean"
+				],
+				[
+					"Scotty3D",
+					"Human"
+				],
+				[
+					"Scotty3D",
+					"Cornell (Lambertian)"
+				],
+				[
+					"Scotty3D",
+					"Cornell (Refraction)"
+				],
+				[
+					"Scotty3D",
+					"Cornell"
+				],
+				[
+					"Scotty3D",
+					"Building"
+				],
+				[
+					"Scotty3D",
+					"Sphere"
+				],
+				[
+					"Scotty3D",
+					"Quadball"
+				],
+				[
+					"Scotty3D",
+					"Banana"
+				],
+				[
+					"Scotty3D",
+					"Beast"
+				],
+				[
+					"Scotty3D",
+					"Plane64"
+				],
+				[
+					"Scotty3D",
+					"Plane16384"
+				],
+				[
+					"Scotty3D",
+					"CBLucy"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Scotty3D",
+				"Cornell (Refraction)"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"list l",
+				"Package Control: List Packages"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"EN",
+				"Package Control: Enable Package"
+			],
+			[
+				"debuggi",
+				"SublimeGDB: Stop Debugging"
+			],
+			[
+				"gdb",
+				"SublimeGDB: Step Over"
+			],
+			[
+				"ecc sett",
+				"EasyClangComplete: Settings"
+			],
+			[
+				"settings",
+				"Preferences: Settings"
+			],
+			[
+				"build sys",
+				"Build: New Build System"
+			],
+			[
+				"ecc",
+				"EasyClangComplete: Clean current CMake cache"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"disab",
+				"Package Control: Disable Package"
+			],
+			[
+				"colorsub",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"package remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"package insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Preferences: Browse Packages"
+			],
+			[
+				"close all",
+				"File: Close All"
+			],
+			[
+				"save",
+				"File: Save All"
+			],
+			[
+				"close a",
+				"File: Close All"
+			],
+			[
+				"close",
+				"File: Close All"
+			],
+			[
+				"save all",
+				"File: Save All"
+			],
+			[
+				"beaut",
+				"HTMLBeautify"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"omnimark",
+				"OmniMarkupPreviewer: Preview Current Markup in Browser"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"markmo",
+				"Markmon launch"
+			],
+			[
+				"package control",
+				"Package Control: Remove Package"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"package remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"package re",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"package contr",
+				"Package Control: Remove Package"
+			],
+			[
+				"comp",
+				"Package Control: List Unmanaged Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: Insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Upg",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"Package Control: Remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"PackageControl: List",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 468.0
+	},
+	"console":
+	{
+		"height": 196.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/adrianbiagioli/Developer/School/466-base0",
+		"/Users/adrianbiagioli/Developer/School/466-base0/dist",
+		"/Users/adrianbiagioli/Developer/School/466-base0/meshes"
+	],
+	"file_history":
+	[
+		"/Users/adrianbiagioli/Developer/School/466-base0/meshes/meshes.blob",
+		"/Users/adrianbiagioli/Developer/School/466/Mode.hpp",
+		"/Users/adrianbiagioli/Developer/School/466/read_chunk.hpp",
+		"/Users/adrianbiagioli/Developer/ta/CMU462/MathReview/LinearAlgebra.tex",
+		"/Users/adrianbiagioli/Developer/ta/CMU462/MathReview/MRRelease.pl",
+		"/Users/adrianbiagioli/Developer/ta/CMU462/README.md",
+		"/Users/adrianbiagioli/Developer/School/150/homework-repo/hw/07/code/hw07.sml",
+		"/Users/adrianbiagioli/Developer/School/466/README.md",
+		"/Users/adrianbiagioli/Developer/Projects/icarus/Assets/Scripts/Whip/WhipLink.cs",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/pathtracer.cpp",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/halfEdgeMesh.h",
+		"/Users/adrianbiagioli/Documents/School/Computer Graphics/Final Review.md",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/pathtracer.h",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/sampler.cpp",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/intersection.h",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/bsdf.h",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/application.h",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/CMU462/include/CMU462/spectrum.h",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/bsdf.cpp",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/media/pathtracer/advanced/CBspheres_refraction.dae",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/collada/collada.cpp",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/scotty3d.sublime-project",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/media/pathtracer/advanced/CBspheres_lambertian.dae",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/bvh.h",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/bbox.h",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/bbox.cpp",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/bvh.cpp",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/CMakeLists.txt",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/application.cpp",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/dynamic_scene/joint.cpp",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/dynamic_scene/skeleton.h",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/dynamic_scene/joint.h",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/dynamic_scene/mesh.cpp",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/writeup.txt",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/dynamic_scene/skeleton.cpp",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/spline.h",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/halfEdgeMesh.cpp",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/dynamic_scene/scene.cpp",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/dynamic_scene/sphere.cpp",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/static_scene/sphere.cpp",
+		"/Users/adrianbiagioli/Downloads/test.html",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/spline.inl",
+		"/Users/adrianbiagioli/Desktop/movie/movie.mp4",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/meshEdit.h",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/meshEdit.cpp",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/timeline.h",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/timeline.cpp",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/contracts.h",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/dynamic_scene/mesh.h",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/CMU462/include/CMU462/matrix3x3.h",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/CMU462/src/vector4D.cpp",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/CMU462/include/CMU462/vector3D.h",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/sampler.h",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/ray.h",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/static_scene/primitive.h",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/static_scene/triangle.h",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/static_scene/triangle.cpp",
+		"/Users/adrianbiagioli/Documents/School/17H1/15-150/homework-repo/hw/09/code/mkpotionmix.sml",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/static_scene/sphere.h",
+		"/Users/adrianbiagioli/Downloads/queues-handout/queue.c1",
+		"/Users/adrianbiagioli/Desktop/test.c0",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/camera.cpp",
+		"/Users/adrianbiagioli/Developer/Projects/terraintoolkit/Assets/terraintoolkit/PerlinModifier.cs",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/camera.h",
+		"/Users/adrianbiagioli/Developer/Projects/terraintoolkit/Assets/terraintoolkit/ProceduralTerrainEditor.cs",
+		"/Users/adrianbiagioli/Developer/Projects/terraintoolkit/Assets/terraintoolkit/ProceduralTerrainPatch.cs",
+		"/Users/adrianbiagioli/Developer/Projects/Realtime Clouds/.gitignore",
+		"/Users/adrianbiagioli/Developer/School/462/Scotty3D/src/main.cpp",
+		"/Users/adrianbiagioli/Documents/School/Probability Theory and Random Processes/Homework4Problem1.java",
+		"/Users/adrianbiagioli/Developer/School/462/DrawSVG/drawsvg.sublime-project",
+		"/Users/adrianbiagioli/Developer/School/462/DrawSVG/src/hardware/hardware_renderer.cpp",
+		"/Users/adrianbiagioli/Developer/School/462/DrawSVG/src/software_renderer.cpp",
+		"/Users/adrianbiagioli/Developer/School/462/DrawSVG/src/texture.cpp",
+		"/Users/adrianbiagioli/Developer/School/462/DrawSVG/src/svg.cpp",
+		"/Users/adrianbiagioli/Developer/School/462/DrawSVG/src/texture.h",
+		"/Users/adrianbiagioli/Developer/School/462/DrawSVG/src/svg.h",
+		"/Users/adrianbiagioli/Developer/School/462/DrawSVG/src/software_renderer.h",
+		"/Users/adrianbiagioli/Developer/School/462/DrawSVG/README.md",
+		"/Users/adrianbiagioli/Developer/School/462/DrawSVG/svg/task9/task9.svg",
+		"/Library/Developer/CommandLineTools/usr/include/c++/v1/vector",
+		"/Users/adrianbiagioli/Developer/School/462/DrawSVG/CMU462/include/CMU462/color.h",
+		"/Users/adrianbiagioli/Developer/School/462/DrawSVG/CMU462/deps/glfw/src/wl_init.c",
+		"/Users/adrianbiagioli/Developer/School/462/DrawSVG/CMU462/src/matrix3x3.cpp",
+		"/Users/adrianbiagioli/Developer/School/462/DrawSVG/CMU462/include/CMU462/matrix3x3.h",
+		"/Users/adrianbiagioli/Developer/School/462/DrawSVG/src/viewport.cpp",
+		"/Users/adrianbiagioli/Developer/School/462/DrawSVG/src/viewport.h",
+		"/Users/adrianbiagioli/Developer/School/462/DrawSVG/src/drawsvg.cpp",
+		"/Users/adrianbiagioli/Developer/School/462/DrawSVG/src/contracts.h",
+		"/Users/adrianbiagioli/Developer/School/462/DrawSVG/src/svg_renderer.h",
+		"/Users/adrianbiagioli/Developer/School/462/DrawSVG/CMakeLists.txt",
+		"/Users/adrianbiagioli/Developer/School/462/DrawSVG/src/CMakeLists.txt",
+		"/Users/adrianbiagioli/Downloads/08-datastruct/ssa-main.c0",
+		"/Users/adrianbiagioli/Developer/School/462/DrawSVG/src/hardware_renderer.h",
+		"/Users/adrianbiagioli/Developer/School/462/DrawSVG/src/main.cpp",
+		"/Users/adrianbiagioli/Developer/School/462/DrawSVG/src/png.h",
+		"/Users/adrianbiagioli/Developer/School/462/DrawSVG/src/png.cpp",
+		"/Users/adrianbiagioli/Developer/Projects/my-name-is-liar/My Name Is Liar/Assets/Scenes/Map.unity",
+		"/Users/adrianbiagioli/Developer/Projects/my-name-is-liar/.gitignore",
+		"/Users/adrianbiagioli/Downloads/a00-handout/solutions.txt",
+		"/Users/adrianbiagioli/.ssh/config",
+		"/Users/adrianbiagioli/Developer/213/proxylab/tiny/tiny.c",
+		"/Users/adrianbiagioli/Developer/213/proxylab/Makefile",
+		"/Users/adrianbiagioli/Developer/213/proxylab/proxy.c",
+		"/Users/adrianbiagioli/Developer/213/proxylab/csapp.h",
+		"/Users/adrianbiagioli/Downloads/echoclient.c",
+		"/Users/adrianbiagioli/Downloads/echoserveri.c",
+		"/Users/adrianbiagioli/Developer/213/proxylab/csapp.c",
+		"/Users/adrianbiagioli/Developer/213/proxylab/tiny/csapp.h",
+		"/Users/adrianbiagioli/Developer/213/proxylab/tiny/csapp.c",
+		"/Users/adrianbiagioli/Developer/Projects/icarus/Assets/Scripts/Whip.cs",
+		"/Users/adrianbiagioli/Developer/rtgd/footloosevr/Unity/Assets/dataCollector.cs",
+		"/Users/adrianbiagioli/Downloads/handout/password-main.c0",
+		"/Users/adrianbiagioli/Downloads/handout/password.bc0",
+		"/Users/adrianbiagioli/Desktop/rec12/tricky_errors/f.c",
+		"/Users/adrianbiagioli/Desktop/rec12/tricky_errors/e.c",
+		"/Users/adrianbiagioli/Desktop/rec12/tricky_errors/a.c",
+		"/Users/adrianbiagioli/Desktop/rec12/tricky_errors/b.c",
+		"/Users/adrianbiagioli/Desktop/rec12/tricky_errors/c.c",
+		"/Users/adrianbiagioli/Desktop/rec12/tricky_errors/d.c",
+		"/Users/adrianbiagioli/Desktop/rec12/is_perfect_square.c",
+		"/Users/adrianbiagioli/Desktop/rec12/badswitch.c",
+		"/Users/adrianbiagioli/Desktop/rec12/print_dir.c",
+		"/Users/adrianbiagioli/Desktop/rec12/int_sizes.txt",
+		"/Users/adrianbiagioli/Desktop/rec12/addr_of_2.c",
+		"/Users/adrianbiagioli/Desktop/rec12/addr_of_1.c",
+		"/Users/adrianbiagioli/Desktop/rec12/structs.c",
+		"/Users/adrianbiagioli/Desktop/rec12/printing.c",
+		"/Users/adrianbiagioli/Developer/213/malloclab/mm-baseline.c"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 193.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"board_meshes",
+			"loop_indices"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Game.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12836,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11493,
+								11493
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3603.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Game.hpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2293,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1829,
+								1829
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 862.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "meshes/export-meshes.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4349,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3185,
+								3185
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "main.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5225,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								405,
+								405
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2016.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": ".clang_complete",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 29,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								29,
+								29
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 100.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.astyle_error_message":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 114.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.latextools":
+	{
+		"height": 106.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 113.0
+	},
+	"output.variable_get":
+	{
+		"height": 25.0
+	},
+	"pinned_build_system": "",
+	"project": "base0.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"c0vm.c"
+			],
+			[
+				"anal",
+				"~/Documents/School/15-122/Programming Assignments/2016-09-29-doslingos/doslingos-handout/analysis.c0"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 229.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
