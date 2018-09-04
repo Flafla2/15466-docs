@@ -1,0 +1,35 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+	"build_systems":
+    [
+        {
+            "name": "base0",
+            "cmd": ["jam"],
+            "working_dir": "$project_path",
+            "selector": "source.c++",
+            "shell": true,
+            "variants": [
+            	{
+                    "name": "Clean",
+                    "working_dir": "$project_path",
+                    "cmd": ["jam clean"]
+                },
+                {
+                	"name": "Run",
+                	"working_dir": "$project_path/dist",
+                	"cmd": "./main"
+                },
+                {
+                	"name": "Regenerate meshes.blob",
+                	"working_dir": "$project_path/meshes",
+                	"cmd": "blender --background --python export-meshes.py -- meshes.blend meshes.blob && (rm ../dist/meshes.blob || true) && cp meshes.blob ../dist"
+                }
+            ]
+        }
+    ]
+}

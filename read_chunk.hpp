@@ -5,6 +5,13 @@
 #include <stdexcept>
 #include <cassert>
 
+/*
+ * read_chunk retrieves managed data from an input stream.
+ * magic: Identifier for the data block to make sure it is the correct filetype
+ * _to: vector of objects to serialize to.  will serialize data of size from file
+ * 
+ * note: this is in a .hpp file because it must be defined in a header for linking reasons.
+ */
 template< typename T >
 void read_chunk(std::istream &from, std::string const &magic, std::vector< T > *_to) {
 	assert(_to);

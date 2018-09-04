@@ -6,6 +6,7 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/quaternion.hpp>
 
+#include <random>
 #include <vector>
 
 // The 'Game' struct holds all of the game-relevant state,
@@ -58,27 +59,30 @@ struct Game {
 		GLsizei count = 0;
 	};
 
-	Mesh tile_mesh;
-	Mesh cursor_mesh;
-	Mesh doll_mesh;
-	Mesh egg_mesh;
-	Mesh cube_mesh;
+	Mesh paddle_mesh;
+	Mesh track_mesh;
+	Mesh ball_mesh;
 
 	GLuint meshes_for_simple_shading_vao = -1U; //vertex array object that describes how to connect the meshes_vbo to the simple_shading_program
 
 	//------- game state -------
 
-	glm::uvec2 board_size = glm::uvec2(5,4);
-	std::vector< Mesh const * > board_meshes;
-	std::vector< glm::quat > board_rotations;
+	std::mt19937 mt = std::mt19937(0xbead1234);
 
-	glm::uvec2 cursor = glm::vec2(0,0);
+	const double track_size = 4.7;
+	const double paddle_size = 1.0;
+	const double move_speed = 0.2;
+
+	// Min: 0.0, Max: 1.0
+	// Current position of the paddle.  0.0/1.0 is 3-o'clock position going CW
+	double paddle_pos = 0.75;
+	glm::vec2 ball_vel = glm::vec2(1,0);
+	glm::vec2 ball_pos = glm::vec2(0,0);
+	glm::uvec2 camera_dim = glm::uvec2(6,6);
 
 	struct {
-		bool roll_left = false;
-		bool roll_right = false;
-		bool roll_up = false;
-		bool roll_down = false;
+		bool move_cw = false;
+		bool move_ccw = false;
 	} controls;
 
 };

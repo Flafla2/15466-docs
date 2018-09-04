@@ -97,9 +97,11 @@ for name in to_write:
 				data += struct.pack('f', x)
 			for x in loop.normal:
 				data += struct.pack('f', x)
-			#TODO: set 'col' based on object's active vertex colors array.
-			# you should be able to use code much like the texcoord code below.
-			col = mathutils.Color((1.0, 1.0, 1.0))
+			
+			# Col is the default name for a color layer in blender.  Change if needed
+			col_layer = mesh.vertex_colors['Col']
+			col = col_layer.data[poly.loop_indices[i]].color
+
 			data += struct.pack('BBBB', int(col.r * 255), int(col.g * 255), int(col.b * 255), 255)
 
 			if do_texcoord:
