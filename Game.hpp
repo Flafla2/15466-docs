@@ -15,7 +15,7 @@
 struct Game {
 	//Game creates OpenGL resources (i.e. vertex buffer objects) in its
 	//constructor and frees them in its destructor.
-	Game();
+	Game(SDL_Window *window);
 	~Game();
 
 	//handle_event is called when new mouse or keyboard events are received:
@@ -65,6 +65,8 @@ struct Game {
 	Mesh lose_text_mesh;
 	Mesh coin_mesh;
 	Mesh bomb_mesh;
+
+	SDL_Window *window;
 
 	GLuint meshes_for_simple_shading_vao = -1U; //vertex array object that describes how to connect the meshes_vbo to the simple_shading_program
 

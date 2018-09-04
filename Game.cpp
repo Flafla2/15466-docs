@@ -16,7 +16,7 @@
 //helper defined later; throws if shader compilation fails:
 static GLuint compile_shader(GLenum type, std::string const &source);
 
-Game::Game() {
+Game::Game(SDL_Window *window) {
 	{ //create an opengl program to perform sun/sky (well, directional+hemispherical) lighting:
 		GLuint vertex_shader = compile_shader(GL_VERTEX_SHADER,
 			"#version 330\n"
@@ -63,6 +63,8 @@ Game::Game() {
 			"	fragColor = vec4(color.rgb * total_light, color.a);\n"
 			"}\n"
 		);
+
+		this->window = window;
 
 		simple_shading.program = glCreateProgram();
 		glAttachShader(simple_shading.program, vertex_shader);
@@ -350,6 +352,11 @@ void Game::update(float elapsed) {
 		cur_state = POST_GAME;
 		state_timer = game_time + 2.0;
 		std::cout << "Lose Condition" << std::endl;
+
+		char scorebuf[512];
+		snprintf(scorebuf, 512, "Score: %d", (int)score);
+		SDL_ShowSimpleMessageBox(0, "You Lost", scorebuf, window);
+		score = 0;
 	}
 }
 

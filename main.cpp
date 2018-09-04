@@ -90,7 +90,7 @@ int main(int argc, char **argv) {
 
 	//------------ create game object (loads assets) --------------
 
-	std::shared_ptr< Game > game = std::make_shared< Game >();
+	std::shared_ptr< Game > game = std::make_shared< Game >(window);
 
 	//------------ main loop ------------
 
